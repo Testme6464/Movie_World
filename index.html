@@ -1,75 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Image Links 50</title>
+    <title>Image Links 50 (Custom Size)</title>
     <style>
         body { font-family: sans-serif; }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+            /* width ပြောင်းလိုက်တဲ့အတွက် ပုံတွေဆံ့အောင် minmax ကို ၂၁၀ အထိ တိုးထားပေးပါတယ် */
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
             gap: 20px;
             padding: 20px;
         }
         .item { text-align: center; }
-        img { border: 2px solid #ccc; border-radius: 8px; }
+        img { 
+            border: 2px solid #ccc; 
+            border-radius: 8px;
+            /* Mouse တင်ရင် သိသာအောင် style အနည်းငယ် ထပ်ထည့်ပေးထားပါတယ် */
+            transition: transform 0.2s;
+        }
+        img:hover {
+            transform: scale(1.05);
+            border-color: #007bff;
+        }
     </style>
 </head>
 <body>
 
-    <h2 style="text-align: center;">Image Links 1 to 50</h2>
+    <h2 style="text-align: center;">Image Links 1 to 50 (200x400)</h2>
 
     <div class="grid-container">
         <a href="https://t.me/jackiechanmoviessub/3"><img src="1.jpg" width="200" height="400"></a>
-        <a href="link2.html"><img src="https://placehold.co/100x200?text=2" width="100" height="200"></a>
-        <a href="link3.html"><img src="https://placehold.co/100x200?text=3" width="100" height="200"></a>
-        <a href="link4.html"><img src="https://placehold.co/100x200?text=4" width="100" height="200"></a>
-        <a href="link5.html"><img src="https://placehold.co/100x200?text=5" width="100" height="200"></a>
-        <a href="link6.html"><img src="https://placehold.co/100x200?text=6" width="100" height="200"></a>
-        <a href="link7.html"><img src="https://placehold.co/100x200?text=7" width="100" height="200"></a>
-        <a href="link8.html"><img src="https://placehold.co/100x200?text=8" width="100" height="200"></a>
-        <a href="link9.html"><img src="https://placehold.co/100x200?text=9" width="100" height="200"></a>
-        <a href="link10.html"><img src="https://placehold.co/100x200?text=10" width="100" height="200"></a>
-        <a href="link11.html"><img src="https://placehold.co/100x200?text=11" width="100" height="200"></a>
-        <a href="link12.html"><img src="https://placehold.co/100x200?text=12" width="100" height="200"></a>
-        <a href="link13.html"><img src="https://placehold.co/100x200?text=13" width="100" height="200"></a>
-        <a href="link14.html"><img src="https://placehold.co/100x200?text=14" width="100" height="200"></a>
-        <a href="link15.html"><img src="https://placehold.co/100x200?text=15" width="100" height="200"></a>
-        <a href="link16.html"><img src="https://placehold.co/100x200?text=16" width="100" height="200"></a>
-        <a href="link17.html"><img src="https://placehold.co/100x200?text=17" width="100" height="200"></a>
-        <a href="link18.html"><img src="https://placehold.co/100x200?text=18" width="100" height="200"></a>
-        <a href="link19.html"><img src="https://placehold.co/100x200?text=19" width="100" height="200"></a>
-        <a href="link20.html"><img src="https://placehold.co/100x200?text=20" width="100" height="200"></a>
-        <a href="link21.html"><img src="https://placehold.co/100x200?text=21" width="100" height="200"></a>
-        <a href="link22.html"><img src="https://placehold.co/100x200?text=22" width="100" height="200"></a>
-        <a href="link23.html"><img src="https://placehold.co/100x200?text=23" width="100" height="200"></a>
-        <a href="link24.html"><img src="https://placehold.co/100x200?text=24" width="100" height="200"></a>
-        <a href="link25.html"><img src="https://placehold.co/100x200?text=25" width="100" height="200"></a>
-        <a href="link26.html"><img src="https://placehold.co/100x200?text=26" width="100" height="200"></a>
-        <a href="link27.html"><img src="https://placehold.co/100x200?text=27" width="100" height="200"></a>
-        <a href="link28.html"><img src="https://placehold.co/100x200?text=28" width="100" height="200"></a>
-        <a href="link29.html"><img src="https://placehold.co/100x200?text=29" width="100" height="200"></a>
-        <a href="link30.html"><img src="https://placehold.co/100x200?text=30" width="100" height="200"></a>
-        <a href="link31.html"><img src="https://placehold.co/100x200?text=31" width="100" height="200"></a>
-        <a href="link32.html"><img src="https://placehold.co/100x200?text=32" width="100" height="200"></a>
-        <a href="link33.html"><img src="https://placehold.co/100x200?text=33" width="100" height="200"></a>
-        <a href="link34.html"><img src="https://placehold.co/100x200?text=34" width="100" height="200"></a>
-        <a href="link35.html"><img src="https://placehold.co/100x200?text=35" width="100" height="200"></a>
-        <a href="link36.html"><img src="https://placehold.co/100x200?text=36" width="100" height="200"></a>
-        <a href="link37.html"><img src="https://placehold.co/100x200?text=37" width="100" height="200"></a>
-        <a href="link38.html"><img src="https://placehold.co/100x200?text=38" width="100" height="200"></a>
-        <a href="link39.html"><img src="https://placehold.co/100x200?text=39" width="100" height="200"></a>
-        <a href="link40.html"><img src="https://placehold.co/100x200?text=40" width="100" height="200"></a>
-        <a href="link41.html"><img src="https://placehold.co/100x200?text=41" width="100" height="200"></a>
-        <a href="link42.html"><img src="https://placehold.co/100x200?text=42" width="100" height="200"></a>
-        <a href="link43.html"><img src="https://placehold.co/100x200?text=43" width="100" height="200"></a>
-        <a href="link44.html"><img src="https://placehold.co/100x200?text=44" width="100" height="200"></a>
-        <a href="link45.html"><img src="https://placehold.co/100x200?text=45" width="100" height="200"></a>
-        <a href="link46.html"><img src="https://placehold.co/100x200?text=46" width="100" height="200"></a>
-        <a href="link47.html"><img src="https://placehold.co/100x200?text=47" width="100" height="200"></a>
-        <a href="link48.html"><img src="https://placehold.co/100x200?text=48" width="100" height="200"></a>
-        <a href="link49.html"><img src="https://placehold.co/100x200?text=49" width="100" height="200"></a>
-        <a href="link50.html"><img src="https://placehold.co/100x200?text=50" width="100" height="200"></a>
+        <a href="link2.html"><img src="https://placehold.co/200x400?text=2" width="200" height="400"></a>
+        <a href="link3.html"><img src="https://placehold.co/200x400?text=3" width="200" height="400"></a>
+        <a href="link4.html"><img src="https://placehold.co/200x400?text=4" width="200" height="400"></a>
+        <a href="link5.html"><img src="https://placehold.co/200x400?text=5" width="200" height="400"></a>
+        <a href="link6.html"><img src="https://placehold.co/200x400?text=6" width="200" height="400"></a>
+        <a href="link7.html"><img src="https://placehold.co/200x400?text=7" width="200" height="400"></a>
+        <a href="link8.html"><img src="https://placehold.co/200x400?text=8" width="200" height="400"></a>
+        <a href="link9.html"><img src="https://placehold.co/200x400?text=9" width="200" height="400"></a>
+        <a href="link10.html"><img src="https://placehold.co/200x400?text=10" width="200" height="400"></a>
+        <a href="link11.html"><img src="https://placehold.co/200x400?text=11" width="200" height="400"></a>
+        <a href="link12.html"><img src="https://placehold.co/200x400?text=12" width="200" height="400"></a>
+        <a href="link13.html"><img src="https://placehold.co/200x400?text=13" width="200" height="400"></a>
+        <a href="link14.html"><img src="https://placehold.co/200x400?text=14" width="200" height="400"></a>
+        <a href="link15.html"><img src="https://placehold.co/200x400?text=15" width="200" height="400"></a>
+        <a href="link16.html"><img src="https://placehold.co/200x400?text=16" width="200" height="400"></a>
+        <a href="link17.html"><img src="https://placehold.co/200x400?text=17" width="200" height="400"></a>
+        <a href="link18.html"><img src="https://placehold.co/200x400?text=18" width="200" height="400"></a>
+        <a href="link19.html"><img src="https://placehold.co/200x400?text=19" width="200" height="400"></a>
+        <a href="link20.html"><img src="https://placehold.co/200x400?text=20" width="200" height="400"></a>
+        <a href="link21.html"><img src="https://placehold.co/200x400?text=21" width="200" height="400"></a>
+        <a href="link22.html"><img src="https://placehold.co/200x400?text=22" width="200" height="400"></a>
+        <a href="link23.html"><img src="https://placehold.co/200x400?text=23" width="200" height="400"></a>
+        <a href="link24.html"><img src="https://placehold.co/200x400?text=24" width="200" height="400"></a>
+        <a href="link25.html"><img src="https://placehold.co/200x400?text=25" width="200" height="400"></a>
+        <a href="link26.html"><img src="https://placehold.co/200x400?text=26" width="200" height="400"></a>
+        <a href="link27.html"><img src="https://placehold.co/200x400?text=27" width="200" height="400"></a>
+        <a href="link28.html"><img src="https://placehold.co/200x400?text=28" width="200" height="400"></a>
+        <a href="link29.html"><img src="https://placehold.co/200x400?text=29" width="200" height="400"></a>
+        <a href="link30.html"><img src="https://placehold.co/200x400?text=30" width="200" height="400"></a>
+        <a href="link31.html"><img src="https://placehold.co/200x400?text=31" width="200" height="400"></a>
+        <a href="link32.html"><img src="https://placehold.co/200x400?text=32" width="200" height="400"></a>
+        <a href="link33.html"><img src="https://placehold.co/200x400?text=33" width="200" height="400"></a>
+        <a href="link34.html"><img src="https://placehold.co/200x400?text=34" width="200" height="400"></a>
+        <a href="link35.html"><img src="https://placehold.co/200x400?text=35" width="200" height="400"></a>
+        <a href="link36.html"><img src="https://placehold.co/200x400?text=36" width="200" height="400"></a>
+        <a href="link37.html"><img src="https://placehold.co/200x400?text=37" width="200" height="400"></a>
+        <a href="link38.html"><img src="https://placehold.co/200x400?text=38" width="200" height="400"></a>
+        <a href="link39.html"><img src="https://placehold.co/200x400?text=39" width="200" height="400"></a>
+        <a href="link40.html"><img src="https://placehold.co/200x400?text=40" width="200" height="400"></a>
+        <a href="link41.html"><img src="https://placehold.co/200x400?text=41" width="200" height="400"></a>
+        <a href="link42.html"><img src="https://placehold.co/200x400?text=42" width="200" height="400"></a>
+        <a href="link43.html"><img src="https://placehold.co/200x400?text=43" width="200" height="400"></a>
+        <a href="link44.html"><img src="https://placehold.co/200x400?text=44" width="200" height="400"></a>
+        <a href="link45.html"><img src="https://placehold.co/200x400?text=45" width="200" height="400"></a>
+        <a href="link46.html"><img src="https://placehold.co/200x400?text=46" width="200" height="400"></a>
+        <a href="link47.html"><img src="https://placehold.co/200x400?text=47" width="200" height="400"></a>
+        <a href="link48.html"><img src="https://placehold.co/200x400?text=48" width="200" height="400"></a>
+        <a href="link49.html"><img src="https://placehold.co/200x400?text=49" width="200" height="400"></a>
+        <a href="link50.html"><img src="https://placehold.co/200x400?text=50" width="200" height="400"></a>
     </div>
 
 </body>
-          </html>
+</html>

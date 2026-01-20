@@ -3,6 +3,39 @@
 <head>
     <title>Jackie Chan Movies Collection</title>
     <style>
+        .floating-tg {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #24A1DE;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.floating-tg:hover {
+    transform: scale(1.1);
+}
+
+.floating-tg img {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0;
+    margin-right: 8px;
+}
+
+.floating-tg span {
+    font-weight: bold;
+    font-size: 14px;
+}
+        
         body { font-family: sans-serif; }
         .grid-container {
             display: grid;
@@ -79,6 +112,10 @@
         <a href="link49.html"><img src="tk/49.jpg" width="200" height="400" alt="Image 49"></a>
         <a href="link50.html"><img src="tk/50.jpg" width="200" height="400" alt="Image 50"></a>
     </div>
-
+<a href="https://t.me/shopwithmeow" class="floating-tg" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+    <span>Join Telegram</span>
+</a>
+    
 </body>
 </html>

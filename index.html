@@ -3,37 +3,41 @@
 <head>
     <title>Jackie Chan Movies Collection</title>
     <style>
-        .floating-tg {
+        /* Floating Button ကို နှစ်ဆချဲ့ထားသော CSS */
+.floating-tg {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
     background-color: #24A1DE;
     color: white;
-    padding: 10px 15px;
-    border-radius: 50px;
+    /* padding ကို တိုးလိုက်ခြင်းဖြင့် window ပိုကြီးလာပါမည် */
+    padding: 20px 35px; 
+    border-radius: 60px;
     display: flex;
     align-items: center;
     text-decoration: none;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-    z-index: 1000;
-    transition: transform 0.3s;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    z-index: 9999;
+    transition: 0.3s;
 }
 
-.floating-tg:hover {
-    transform: scale(1.1);
+.floating-tg:hover { 
+    transform: scale(1.05); 
+    background-color: #1e88ba;
 }
 
-.floating-tg img {
-    width: 30px;
-    height: 30px;
-    border: none;
-    border-radius: 0;
-    margin-right: 8px;
+/* Telegram Logo ကို နှစ်ဆချဲ့ခြင်း */
+.floating-tg img { 
+    width: 50px;  /* မူလ 25px မှ 50px သို့ */
+    height: 50px; 
+    margin-right: 15px; 
+    border: none; 
 }
+
 
 .floating-tg span {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 24px;
 }
         
         body { font-family: sans-serif; }

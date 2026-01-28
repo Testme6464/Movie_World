@@ -3,6 +3,32 @@
 <head>
     <title>Jackie Chan Movies Collection</title>
     <style>
+       /* Main Page Floating Button (အသစ်) */
+.floating-main {
+    position: fixed;
+    bottom: 125px; /* Telegram button ရဲ့ အပေါ်မှာ ရှိနေစေရန် */
+    right: 30px;
+    background-color: white; 
+    padding: 15px 30px;
+    border-radius: 60px;
+    text-decoration: none;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    z-index: 9999;
+    transition: 0.3s;
+    border: 2px solid #ff0000;
+}
+
+.floating-main span {
+    color: #ff0000; /* စာလုံးအနီရောင် */
+    font-weight: bold; /* စာလုံးအထူ */
+    font-size: 22px;
+}
+
+.floating-main:hover { 
+    transform: scale(1.05); 
+    background-color: #fff0f0;
+}
+        
         /* Floating Button ကို နှစ်ဆချဲ့ထားသော CSS */
 .floating-tg {
     position: fixed;
@@ -141,6 +167,9 @@
 
         
     </div>
+    <a href="သင့်ရဲ့MainPageLinkဒီမှာထည့်ရန်" class="floating-main">
+    <span>Main Page</span>
+    </a>
     
 <a href="https://t.me/shopwithmeow" class="floating-tg" target="_blank">
     <img src="tk/100000.jpg" alt="Telegram">
